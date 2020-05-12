@@ -3,7 +3,7 @@ from tkinter import  *
 from PIL import ImageTk, Image
 
 root = Tk()
-root.title("Learning Icons")
+root.title("Image Viewer")
 root.iconbitmap('inkspot.ico')
 
 image1 = ImageTk.PhotoImage(Image.open(os.path.join('pictures', 'rocks.jpg')))
