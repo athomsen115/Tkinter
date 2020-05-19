@@ -14,7 +14,7 @@ root.configure(background="blue")
 def zipLookup():
     #zipLabel = Label(root, text=zipCode.get())
     #szipLabel.grid(row=1, column=0, columnspan=2)
-    api_key = "7FA1426C-C1A5-4354-93F7-A5FEBC2C4149"
+    api_key = {INSERT-YOUR-AIRNOW-API_KEY}
     #http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=17057&distance=5&API_KEY=7FA1426C-C1A5-4354-93F7-A5FEBC2C4149
     try:
         apiRequest = requests.get("http://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=" + zipCode.get() + "&distance=25&API_KEY=" + api_key)
@@ -43,7 +43,7 @@ def zipLookup():
         api = "Error..."
 
 def weather():
-    api_key = "6fc04797a680e4a15568344846932d13"
+    api_key = {INSERT-YOUR-OPENWEATHER-API-KEY}
 
     try:
         url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipCode.get() + ",us&appid=" + api_key + "&units=imperial"
