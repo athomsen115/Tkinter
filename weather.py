@@ -2,7 +2,7 @@ import requests, json
 from datetime import datetime
 
 def weather():
-    api_key = "6fc04797a680e4a15568344846932d13"
+    api_key = {INSERT-YOUR-OPENWEATHER-API-KEY}
 
     try:
         url = "http://api.openweathermap.org/data/2.5/weather?zip=17057,us&appid="+api_key+"&units=imperial"
