@@ -1,5 +1,5 @@
 # Tkinter
-Projects made with tkinter
+Projects made with tkinter (including a calculator and 2 weather apps)
 
 The calculator is a simple calculator for calculating basic math problems. More advanced scientific calculator in the works
 
